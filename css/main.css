@@ -96,8 +96,8 @@ textarea {
    ========================================================================== */
 
 html {
-    background-color: #fff;
-
+    background-color: rgb(119, 136, 153);
+    height: 100%;
     width: 100%;
 }
 
@@ -121,12 +121,71 @@ body {
 
 header,
 footer {
-    height: 80px;
     width: 100%;
 }
 
 main {
-    height: 250px;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 1em;
+    line-height: 1.5em;
+    background-color: rgba(255, 182, 193, 0.7);
+    border-radius: 1em;
+    flex: 1 10 100%;
+}
+
+
+header,
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100%
+}
+
+
+
+html {
+    background-color: rgb(119, 136, 153);
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1em;
+    color: #fff;
+    background-color: rgb(119, 136, 153);
+}
+
+.flex-container header {
+    font-size: 65px;
+    justify-content: left;
+    font-family: 'Merienda One', cursive;
+    padding: 0.3em;
+    margin: 0.1em;
+
+
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+main {
     width: 100%;
     font-size: 1.5em;
     font-weight: bold;
@@ -163,7 +222,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 10 200px;
+    flex: 1 5 12.5em;
     color: #fff;
     line-height: 1.5em;
     font-size: 1em;
@@ -172,9 +231,8 @@ main {
     padding: 1em 1.5em;
     margin: 2em auto;
     text-align: justify;
-    border: 5px dashed rgba(211, 211, 211, 0.3)
+    border: 0.3125em dashed rgba(211, 211, 211, 0.3);
 }
-
 
 
 /* ==========================================================================
@@ -259,19 +317,9 @@ main {
    Modify as content requires.
    ========================================================================== */
 
-@media all and (max-width: 768px) {
-    body {
-        padding: 1em;
-    }
-}
+@media all and (max-width: 768px) {}
 
-@media (max-width: 1200px) {
-
-    #div-1,
-    #div-2 {}
-
-    #div-3 {}
-}
+@media (max-width: 1200px) {}
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
